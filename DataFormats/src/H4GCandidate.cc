@@ -79,31 +79,9 @@ tp_ ()
 {}
 
   H4GCandidate::~H4GCandidate() {}
-  H4GCandidate::H4GCandidate( std::vector<flashgg::Photon> phoVector, std::vector<edm::Ptr<reco::Vertex>> Vertices, std::vector<edm::Ptr<reco::Vertex>> slim_Vertices, edm::Ptr<reco::Vertex> vertex_diphoton, edm::Ptr<reco::Vertex> vertex_bdt, reco::GenParticle::Point genVertex, math::XYZPoint BSPoint, std::vector <edm::Ptr<flashgg::DiPhotonCandidate>> diPhoPtrs, std::vector<std::vector<float>> Vector, float MVA0, float MVA1, float MVA2, float dZ1, float dZ2, float dZtrue, int hgg_index, int trueVtx_index, int rndVtx_index, int bdtVtx_index, edm::FileInPath vertexProbMVAweightfileH4G):
-  phoVector_(phoVector), Vertices_(Vertices), slim_Vertices_(slim_Vertices),vertex_diphoton_(vertex_diphoton), vertex_bdt_(vertex_bdt), genVertex_(genVertex), BSPoint_(BSPoint), diPhoPtrs_(diPhoPtrs), Vector_(Vector), MVA0_(MVA0), MVA1_(MVA1), MVA2_(MVA2), dZ1_(dZ1), dZ2_(dZ2), dZtrue_(dZtrue), hgg_index_(hgg_index), trueVtx_index_(trueVtx_index), rndVtx_index_(rndVtx_index), bdtVtx_index_(bdtVtx_index), vertexProbMVAweightfileH4G_(vertexProbMVAweightfileH4G)
+  H4GCandidate::H4GCandidate( std::vector<flashgg::Photon> phoVector, std::vector<edm::Ptr<reco::Vertex>> Vertices, std::vector<edm::Ptr<reco::Vertex>> slim_Vertices, edm::Ptr<reco::Vertex> vertex_diphoton, edm::Ptr<reco::Vertex> vertex_bdt, reco::GenParticle::Point genVertex, math::XYZPoint BSPoint, std::vector <edm::Ptr<flashgg::DiPhotonCandidate>> diPhoPtrs, std::vector<std::vector<float>> Vector, float MVA0, float MVA1, float MVA2, float dZ1, float dZ2, float dZtrue, int hgg_index, int trueVtx_index, int rndVtx_index, int bdtVtx_index, float tp_pt, float nVertices, float nConv, TMVA::Reader *VertexProbMva):
+  phoVector_(phoVector), Vertices_(Vertices), slim_Vertices_(slim_Vertices),vertex_diphoton_(vertex_diphoton), vertex_bdt_(vertex_bdt), genVertex_(genVertex), BSPoint_(BSPoint), diPhoPtrs_(diPhoPtrs), Vector_(Vector), MVA0_(MVA0), MVA1_(MVA1), MVA2_(MVA2), dZ1_(dZ1), dZ2_(dZ2), dZtrue_(dZtrue), hgg_index_(hgg_index), trueVtx_index_(trueVtx_index), rndVtx_index_(rndVtx_index), bdtVtx_index_(bdtVtx_index), tp_pt_(tp_pt), nVertices_(nVertices), nConv_(nConv), VertexProbMva_(VertexProbMva)
   {
-
-    float tp_pt_vtxProb;
-    float nVertices_vtxProb;
-    float MVA0_vtxProb;
-    float MVA1_vtxProb;
-    float dZ1_vtxProb;
-    float MVA2_vtxProb;
-    float dZ2_vtxProb;
-    float nConv_vtxProb;
-
-    TMVA::Reader *VertexProbMva_;
-    VertexProbMva_ = new TMVA::Reader( "!Color:Silent" );
-    VertexProbMva_->AddVariable( "tp_pt", &tp_pt_vtxProb );
-    VertexProbMva_->AddVariable( "n_vertices", &nVertices_vtxProb );
-    VertexProbMva_->AddVariable( "MVA0", &MVA0_vtxProb );
-    VertexProbMva_->AddVariable( "MVA1", &MVA1_vtxProb );
-    VertexProbMva_->AddVariable( "dZ1", &dZ1_vtxProb );
-    VertexProbMva_->AddVariable( "MVA2", &MVA2_vtxProb );
-    VertexProbMva_->AddVariable( "dZ2", &dZ2_vtxProb );
-    VertexProbMva_->AddVariable( "nConv", &nConv_vtxProb );
-    VertexProbMva_->BookMVA( "BDT", vertexProbMVAweightfileH4G_.fullPath() );
-
     int random_vtx = rand() % slim_Vertices_.size();
     Vertex_random_ = slim_Vertices_[random_vtx];
 
@@ -278,14 +256,7 @@ tp_ ()
       phoP4Corrected3_ = phoP4Corrected_[dp2_ipho1_];
     }
 
-    tp_pt_vtxProb =  tp_.pt();;
-    nVertices_vtxProb = (float)Vertices.size();
-    MVA0_vtxProb = MVA0_;
-    MVA1_vtxProb = MVA1_;;
-    dZ1_vtxProb = dZ1_;;
-    MVA2_vtxProb = MVA2_;;
-    dZ2_vtxProb = dZ2_;
-
+    tp_pt =  tp_.pt();
     vtxProbMVA_ = VertexProbMva_->EvaluateMVA( "BDT" );  
   
   }

@@ -107,6 +107,7 @@ namespace flashgg {
     edm::FileInPath vertexProbMVAweightfileH4G_;
 
     TMVA::Reader *VertexIdMva_;
+    TMVA::Reader *VertexProbMva_;
 
     void produce( Event &, const EventSetup & ) override;
     
@@ -125,18 +126,11 @@ namespace flashgg {
     EDGetTokenT<reco::BeamSpot>  beamSpotToken_;
     Handle<reco::BeamSpot>  recoBeamSpotHandle;
 
-    // EDGetTokenT<std::vector<reco::Conversion>>  conversionToken_;
-    // Handle<std::vector<reco::Conversion>>  conversionHandle;
-
     EDGetTokenT<View<reco::Conversion> >  conversionToken_;
     Handle<View<reco::Conversion> > conversionHandle;
 
     EDGetTokenT<View<reco::Conversion> >  conversionTokenSingleLeg_;
     Handle<View<reco::Conversion> > conversionHandleSingleLeg;
-
-    // EDGetTokenT<std::vector<reco::Conversion>>  conversionTokenSingleLeg_;
-    // Handle<std::vector<reco::Conversion>>  conversionHandleSingleLeg;
-
 
     EDGetTokenT< VertexCandidateMap > vertexCandidateMapToken_;
     unique_ptr<VertexSelectorBase> vertexSelector_;
@@ -148,6 +142,14 @@ namespace flashgg {
     float ptBal;
     float pullConv;
     float nConv;
+    float tp_pt;
+    float nVertices;
+    float MVA0;
+    float MVA1;
+    float dZ1;
+    float MVA2;
+    float dZ2;
+    float dZtrue;
    
     std::vector<std::pair<unsigned int, float> > sorter_;
     unsigned int selected_vertex_index_ = 0;
@@ -215,6 +217,17 @@ namespace flashgg {
     VertexIdMva_->AddVariable( "pullConv", &pullConv );
     VertexIdMva_->AddVariable( "nConv", &nConv );
     VertexIdMva_->BookMVA( "BDT", vertexIdMVAweightfileH4G_.fullPath() );
+
+    VertexProbMva_ = new TMVA::Reader( "!Color:Silent" );
+    VertexProbMva_->AddVariable( "tp_pt", &tp_pt);
+    VertexProbMva_->AddVariable( "n_vertices", &nVertices );
+    VertexProbMva_->AddVariable( "MVA0", &MVA0 );
+    VertexProbMva_->AddVariable( "MVA1", &MVA1 );
+    VertexProbMva_->AddVariable( "dZ1", &dZ1 );
+    VertexProbMva_->AddVariable( "MVA2", &MVA2 );
+    VertexProbMva_->AddVariable( "dZ2", &dZ2 );
+    VertexProbMva_->AddVariable( "nConv", &nConv );
+    VertexProbMva_->BookMVA( "BDT", vertexProbMVAweightfileH4G_.fullPath() );
 
     // genInfo_ = pSet.getUntrackedParameter<edm::InputTag>( "genInfo", edm::InputTag("generator") );
     // genInfoToken_ = consumes<GenEventInfoProduct>( genInfo_ );
@@ -397,16 +410,18 @@ namespace flashgg {
 
       vertex_bdt = vertex->ptrAt( selected_vertex_index_ );
 
-      float MVA0    = max_mva_value_;
-      float MVA1    = second_max_mva_value_;
-      float MVA2    = third_max_mva_value_;
-      float dZ1     = vertex->at(selected_vertex_index_).position().z() - vertex->at(second_selected_vertex_index_).position().z();
-      float dZ2     = vertex->at(selected_vertex_index_).position().z() - vertex->at(third_selected_vertex_index_).position().z();
-      float dZtrue  = vertex->at(selected_vertex_index_).position().z() - genVertex.z();
+      MVA0      = max_mva_value_;
+      MVA1      = second_max_mva_value_;
+      MVA2      = third_max_mva_value_;
+      dZ1       = vertex->at(selected_vertex_index_).position().z() - vertex->at(second_selected_vertex_index_).position().z();
+      dZ2       = vertex->at(selected_vertex_index_).position().z() - vertex->at(third_selected_vertex_index_).position().z();
+      dZtrue    = vertex->at(selected_vertex_index_).position().z() - genVertex.z();
+      nVertices = (float) vertex->size();
+      nConv = (float)testvar[4][selected_vertex_index_];
 
       //cout << "MVAs: " << MVA0 << " - " << selected_vertex_index_ << " - " << MVA1 << " - " << second_selected_vertex_index_ << " - " << MVA2 << " - " << third_selected_vertex_index_ << endl; 
  
-      H4GCandidate h4g(phoVector, Vertices, slim_Vertices, vertex_diphoton, vertex_bdt, genVertex, BSPoint, diPhoPtrs, testvar, MVA0, MVA1, MVA2, dZ1, dZ2, dZtrue, hgg_index, trueVtxIndex, randVtxIndex, selected_vertex_index_, vertexProbMVAweightfileH4G_);
+      H4GCandidate h4g(phoVector, Vertices, slim_Vertices, vertex_diphoton, vertex_bdt, genVertex, BSPoint, diPhoPtrs, testvar, MVA0, MVA1, MVA2, dZ1, dZ2, dZtrue, hgg_index, trueVtxIndex, randVtxIndex, selected_vertex_index_, tp_pt, nVertices, nConv, VertexProbMva_);
       H4GColl_->push_back(h4g);
     }
     event.put( std::move(H4GColl_) );

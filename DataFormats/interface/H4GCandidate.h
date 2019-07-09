@@ -47,7 +47,7 @@ namespace flashgg {
   public:
     //---ctors---
     H4GCandidate() ;
-    H4GCandidate( std::vector<flashgg::Photon> phoVector, std::vector<edm::Ptr<reco::Vertex>> Vertices,std::vector<edm::Ptr<reco::Vertex>> slim_Vertices,edm::Ptr<reco::Vertex> vertex_diphoton, edm::Ptr<reco::Vertex> vertex_bdt, reco::GenParticle::Point genVertex, math::XYZPoint BSPoint, std::vector <edm::Ptr<flashgg::DiPhotonCandidate>> diPhoPtrs, std::vector<std::vector<float>> Vector, float MVA0, float MVA1, float MVA2, float dZ1, float dZ2, float dZtrue, int hgg_index, int trueVtx_index, int rndVtx_index, int bdtVtx_index, edm::FileInPath vertexProbMVAweightfileH4G);
+    H4GCandidate( std::vector<flashgg::Photon> phoVector, std::vector<edm::Ptr<reco::Vertex>> Vertices,std::vector<edm::Ptr<reco::Vertex>> slim_Vertices,edm::Ptr<reco::Vertex> vertex_diphoton, edm::Ptr<reco::Vertex> vertex_bdt, reco::GenParticle::Point genVertex, math::XYZPoint BSPoint, std::vector <edm::Ptr<flashgg::DiPhotonCandidate>> diPhoPtrs, std::vector<std::vector<float>> Vector, float MVA0, float MVA1, float MVA2, float dZ1, float dZ2, float dZtrue, int hgg_index, int trueVtx_index, int rndVtx_index, int bdtVtx_index, float tp_pt, float nVertices, float nConv, TMVA::Reader *VertexProbMva);
 
     //---dtor---
     ~H4GCandidate();
@@ -89,7 +89,6 @@ namespace flashgg {
     const float &ptAsym() const { return Vector_[1][bdtVtx_index_]; };
     const float &ptBal() const { return Vector_[2][bdtVtx_index_]; };
     const float &pullConv() const { return Vector_[3][bdtVtx_index_]; };
-    const float &nConv() const { return Vector_[4][bdtVtx_index_]; };
     const std::vector<std::vector<float>> &test() const { return Vector_; };
     const float &vtxProbMVA() const { return vtxProbMVA_; }; 
     const float &MVA0() const { return MVA0_; };
@@ -98,11 +97,11 @@ namespace flashgg {
     const float &dZ1() const { return dZ1_; };
     const float &dZ2() const { return dZ2_; };
     const float &dZtrue() const { return dZtrue_; };
+    const float &nConv() const { return Vector_[4][bdtVtx_index_]; };
     const int &hgg_index() const { return hgg_index_; };
     const int &trueVtx_index() const { return trueVtx_index_; };
     const int &rndVtx_index() const { return rndVtx_index_; };
     const int &bdtVtx_index() const { return bdtVtx_index_; };
-    const edm::FileInPath vertexProbMVAweightfileH4G() const { return vertexProbMVAweightfileH4G_; };
     const float BS_factor_0Vtx() const { return BS_factor_0Vtx_; };
     const float BS_factor_HggVtx() const { return BS_factor_HggVtx_; };
     const float BS_factor_RandomVtx() const { return BS_factor_RandomVtx_; };
@@ -152,6 +151,7 @@ namespace flashgg {
     math::XYZPoint BSPoint_;
     std::vector <edm::Ptr<flashgg::DiPhotonCandidate>> diPhoPtrs_;
     std::vector<std::vector<float>> Vector_;
+    float vtxProbMVA_;
     float MVA0_;
     float MVA1_;
     float MVA2_;
@@ -166,6 +166,10 @@ namespace flashgg {
     float BS_factor_HggVtx_;
     float BS_factor_RandomVtx_;
     float BS_factor_BDTVtx_;
+    float tp_pt_;
+    float nVertices_;
+    float nConv_;
+    TMVA::Reader *VertexProbMva_;
     std::vector<flashgg::Photon> phoP4Corrected_;
     flashgg::Photon phoP4Corrected1_;
     flashgg::Photon phoP4Corrected2_;
@@ -192,10 +196,6 @@ namespace flashgg {
     reco::Candidate::LorentzVector pho24_;
     reco::Candidate::LorentzVector pho34_;
     reco::Candidate::LorentzVector tp_;
-
-    edm::FileInPath vertexProbMVAweightfileH4G_;
-    float vtxProbMVA_;
-
 
   };
   typedef std::vector<H4GCandidate> H4GCandidateCollection;
