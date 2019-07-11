@@ -219,7 +219,7 @@ class JobConfig(object):
         if self.dryRun:
             import sys
             if self.dataset and self.dataset != "":
-                name,xsec,totEvents,files,maxEvents,sp_unused = self.dataset
+                name,xsec,totEvents,files,maxEvents,sp_unused,parentFiles = self.dataset
                 if self.getMaxJobs:
                     print "maxJobs:%d" % ( min(len(files),self.nJobs) )
                 if len(files) != 0:
@@ -234,10 +234,9 @@ class JobConfig(object):
             else:
                 sys.exit(1)
 
-
         files = self.inputFiles
         if self.dataset and self.dataset != "":
-            dsetname,xsec,totEvents,files,maxEvents,sp_unused = self.dataset
+            dsetname,xsec,totEvents,files,maxEvents,sp_unused,parentFiles = self.dataset
             if type(xsec) == float or xsec == None:
                 print
                 print "Error: cross section not found for dataset %s" % dsetname
@@ -387,7 +386,26 @@ class JobConfig(object):
                 ## process.source.fileNames.extend([ str("%s%s" % (self.filePrepend,f)) for f in  files])
                 process.source.fileNames = flist
 
-        process.source.secondaryFileNames = secFileList  # get list of secondary files by hand
+        plist = []
+        for p in parentFiles:
+            if len(p.split(":",1))>1:
+                plist.append(str(p))
+            else:
+                plist.append(str("%s%s" % (self.parentfilePrepend,p)))
+        if len(plist) > 0:
+            ## fwlite
+            if isFwlite:
+                ## process.fwliteInput.fileNames.extend([ str("%s%s" % (self.filePrepend,f)) for f in  files])
+                process.fwliteInput.secondaryFileNames = plist
+            ## full framework
+            else:
+                ## process.source.fileNames.extend([ str("%s%s" % (self.filePrepend,f)) for f in  files])
+                process.source.secondaryFileNames = plist
+
+
+
+
+        # process.source.secondaryFileNames = secFileList  # get list of secondary files by hand
 
         ## fwlite
         if isFwlite:
@@ -435,6 +453,8 @@ class JobConfig(object):
         elif self.useEOS:
             self.filePrepend = "root://eoscms.cern.ch//eos/cms"
 
+        self.parentfilePrepend = "root://cms-xrd-global.cern.ch/"
+
         self.samplesMan = None
         dataset = None
         if self.dataset != "":
@@ -453,7 +473,7 @@ class JobConfig(object):
         self.dataset = dataset
         # auto-detect data from xsec = 0
         if self.dataset:
-            name,xsec,totEvents,files,maxEvents,specialPrepend = self.dataset
+            name,xsec,totEvents,files,maxEvents,specialPrepend,parentFiles = self.dataset
             if len(specialPrepend) > 0 and not self.useAAA:
                 self.filePrepend = specialPrepend
             if type(xsec) != dict or type(xsec.get("xs",None)) != float:

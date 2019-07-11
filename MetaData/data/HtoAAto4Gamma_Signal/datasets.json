@@ -7,7 +7,8 @@
               "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/Jan_26_2016/v0/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/Jan_26_2016-v0-v0-RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/180126_084624/0000/myMicroAODOutputFile_1.root",
               "nevents": 18694,
               "totEvents": 18694,
-              "weights": 18694.0
+              "weights": 18694.0,
+              "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/100000/8AEB26C6-B5D6-E611-B0DF-02163E0134C1.root"
           },
           {
               "bad": false,
@@ -15,15 +16,18 @@
               "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/Jan_26_2016/v0/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/Jan_26_2016-v0-v0-RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/180126_084624/0000/myMicroAODOutputFile_2.root",
               "nevents": 21570,
               "totEvents": 21570,
-              "weights": 21570.0
+              "weights": 21570.0,
+              "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/100000/F8B8F8CE-D7D5-E611-B2D8-02163E013774.root"
+
           },
           {
-              "bad": false, 
+              "bad": false,
               "events": 45297,
               "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/Jan_26_2016/v0/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/Jan_26_2016-v0-v0-RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/180126_084624/0000/myMicroAODOutputFile_3.root",
               "nevents": 45297,
               "totEvents": 45297,
-              "weights": 45297.0
+              "weights": 45297.0,
+              "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/18401131-7CD3-E611-B3E6-02163E019CB1.root"
           },
           {
               "bad": false,
@@ -31,7 +35,8 @@
               "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/Jan_26_2016/v0/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/Jan_26_2016-v0-v0-RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/180126_084624/0000/myMicroAODOutputFile_4.root",
               "nevents": 114439,
               "totEvents": 114439,
-              "weights": 114439.0
+              "weights": 114439.0,
+              "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-0p1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/7C9FA503-B2D2-E611-9022-02163E019D70.root"
           }
       ],
       "vetted": true
@@ -44,7 +49,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174543/0000/myMicroAODOutputFile_1.root",
                 "nevents": 9889,
                 "totEvents": 9889,
-                "weights": 9889.0
+                "weights": 9889.0,
+                "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/B2668319-7FC9-E611-8366-24BE05CEEB81.root"
             },
             {
                 "bad": false,
@@ -52,7 +58,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174543/0000/myMicroAODOutputFile_2.root",
                 "nevents": 42861,
                 "totEvents": 42861,
-                "weights": 42861.0
+                "weights": 42861.0,
+                "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/2884D9BF-53C9-E611-A864-A0000420FE80.root"
             },
             {
                 "bad": false,
@@ -60,7 +67,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174543/0000/myMicroAODOutputFile_3.root",
                 "nevents": 68140,
                 "totEvents": 68140,
-                "weights": 68140.0
+                "weights": 68140.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/86A90B4E-47C9-E611-9312-A0000420FE80.root"
             },
             {
                 "bad": false,
@@ -68,7 +76,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174543/0000/myMicroAODOutputFile_4.root",
                 "nevents": 74615,
                 "totEvents": 74615,
-                "weights": 74615.0
+                "weights": 74615.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-10_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/FEE7960A-4EC9-E611-8C2E-A0000420FE80.root"
             }
         ],
         "vetted": true
@@ -81,7 +90,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174725/0000/myMicroAODOutputFile_1.root",
                 "nevents": 44640,
                 "totEvents": 44640,
-                "weights": 44640.0
+                "weights": 44640.0,
+                "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/C2FFC9B7-29C8-E611-A3A5-002590DE6E72.root"
             },
             {
                 "bad": false,
@@ -89,7 +99,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174725/0000/myMicroAODOutputFile_2.root",
                 "nevents": 28272,
                 "totEvents": 28272,
-                "weights": 28272.0
+                "weights": 28272,
+                "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/2E21D554-0DC8-E611-B0B5-0025904C7A58.root"
             },
             {
                 "bad": false,
@@ -97,7 +108,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174725/0000/myMicroAODOutputFile_3.root",
                 "nevents": 63848,
                 "totEvents": 63848,
-                "weights": 63848.0
+                "weights": 63848.0,
+                "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/88853F83-EDC7-E611-A969-0CC47AC08BF8.root"
             },
             {
                 "bad": false,
@@ -105,7 +117,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174725/0000/myMicroAODOutputFile_4.root",
                 "nevents": 63240,
                 "totEvents": 63240,
-                "weights": 63240.0
+                "weights": 63240.0,
+                "parent": "/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-15_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/E650D153-0CC8-E611-A0FE-0CC47A706D26.root"
             }
         ],
         "vetted": true
@@ -118,7 +131,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-1_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174908/0000/myMicroAODOutputFile_1.root",
                 "nevents": 76224,
                 "totEvents": 76224,
-                "weights": 76224.0
+                "weights": 76224.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/7E0A52B9-DACB-E611-9F44-001E67397DF5.root"
             },
             {
                 "bad": false,
@@ -126,7 +140,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-1_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174908/0000/myMicroAODOutputFile_2.root",
                 "nevents": 70488,
                 "totEvents": 70488,
-                "weights": 70488.0
+                "weights": 70488.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/9669967C-DECB-E611-BE4D-001E674FB149.root"
             },
             {
                 "bad": false,
@@ -134,7 +149,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-1_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_174908/0000/myMicroAODOutputFile_3.root",
                 "nevents": 53288,
                 "totEvents": 53288,
-                "weights": 53288.0
+                "weights": 53288.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-1_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/D6C6297F-ECCB-E611-AB1F-D067E5F91DA6.root"
             }
         ],
         "vetted": true
@@ -147,7 +163,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-20_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175016/0000/myMicroAODOutputFile_1.root",
                 "nevents": 91576,
                 "totEvents": 91576,
-                "weights": 91576.0
+                "weights": 91576.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-20_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/1C600E40-4CCE-E611-A033-02163E019B93.root"
             },
             {
                 "bad": false,
@@ -155,7 +172,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-20_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175016/0000/myMicroAODOutputFile_2.root",
                 "nevents": 45172,
                 "totEvents": 45172,
-                "weights": 45172.0
+                "weights": 45172.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-20_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/506439DC-56CE-E611-B4E6-02163E019CD0.root"
             },
             {
                 "bad": false,
@@ -163,7 +181,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-20_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175016/0000/myMicroAODOutputFile_3.root",
                 "nevents": 63252,
                 "totEvents": 63252,
-                "weights": 63252.0
+                "weights": 63252.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-20_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/BCA6627F-45CE-E611-8DC5-02163E019E56.root"
             }
         ],
         "vetted": true
@@ -176,7 +195,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_1.root",
                 "nevents": 3808,
                 "totEvents": 3808,
-                "weights": 3808.0
+                "weights": 3808.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/689D3426-32CB-E611-AFCA-02163E019CC3.root"
             },
             {
                 "bad": false,
@@ -184,7 +204,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_10.root",
                 "nevents": 376,
                 "totEvents": 376,
-                "weights": 376.0
+                "weights": 376.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/FA3FF82D-32CB-E611-99EB-002590E7D5AE.root"
             },
             {
                 "bad": false,
@@ -192,7 +213,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_2.root",
                 "nevents": 52264,
                 "totEvents": 52264,
-                "weights": 52264.0
+                "weights": 52264.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/6AA872BC-32CB-E611-950E-0CC47A7E00B6.root"
             },
             {
                 "bad": false,
@@ -200,7 +222,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_3.root",
                 "nevents": 72960,
                 "totEvents": 72960,
-                "weights": 72960.0
+                "weights": 72960.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/7E891421-F1CA-E611-AA50-00259073E4BE.root"
             },
             {
                 "bad": false,
@@ -208,7 +231,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_4.root",
                 "nevents": 2304,
                 "totEvents": 2304,
-                "weights": 2304.0
+                "weights": 2304.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/806B095C-32CB-E611-BCB1-00266CFFBCDC.root"
             },
             {
                 "bad": false,
@@ -216,7 +240,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_5.root",
                 "nevents": 7688,
                 "totEvents": 7688,
-                "weights": 7688.0
+                "weights": 7688.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/A467889E-32CB-E611-A027-20CF3027A5FB.root"
             },
             {
                 "bad": false,
@@ -224,7 +249,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_6.root",
                 "nevents": 19960,
                 "totEvents": 19960,
-                "weights": 19960.0
+                "weights": 19960.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/B8608C47-32CB-E611-BD00-02163E013F07.root"
             },
             {
                 "bad": false,
@@ -232,7 +258,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_7.root",
                 "nevents": 2328,
                 "totEvents": 2328,
-                "weights": 2328.0
+                "weights": 2328.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/DE4AFD3E-32CB-E611-85C2-001EC9ADC799.root"
             },
             {
                 "bad": false,
@@ -240,7 +267,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_8.root",
                 "nevents": 16000,
                 "totEvents": 16000,
-                "weights": 16000.0
+                "weights": 16000.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/E0794223-32CB-E611-963F-0025907B4F14.root"
             },
             {
                 "bad": false,
@@ -248,7 +276,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175125/0000/myMicroAODOutputFile_9.root",
                 "nevents": 22312,
                 "totEvents": 22312,
-                "weights": 22312.0
+                "weights": 22312.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-25_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/F2728E26-32CB-E611-A810-02163E013C20.root"
             }
         ],
         "vetted": true
@@ -261,7 +290,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175235/0000/myMicroAODOutputFile_1.root",
                 "nevents": 43365,
                 "totEvents": 43365,
-                "weights": 43365.0
+                "weights": 43365.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/30A6DD4A-8BD3-E611-ACBC-02163E019CF3.root"
             },
             {
                 "bad": false,
@@ -269,7 +299,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175235/0000/myMicroAODOutputFile_2.root",
                 "nevents": 68435,
                 "totEvents": 68435,
-                "weights": 68435.0
+                "weights": 68435.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/5CB583CB-19CF-E611-9D23-02163E019C82.root"
             },
             {
                 "bad": false,
@@ -277,7 +308,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175235/0000/myMicroAODOutputFile_3.root",
                 "nevents": 69825,
                 "totEvents": 69825,
-                "weights": 69825.0
+                "weights": 69825.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/6446CAB5-86CF-E611-AB22-02163E019D9E.root"
             },
             {
                 "bad": false,
@@ -285,7 +317,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175235/0000/myMicroAODOutputFile_4.root",
                 "nevents": 18375,
                 "totEvents": 18375,
-                "weights": 18375.0
+                "weights": 18375.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-30_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/98730845-57D0-E611-AFBD-02163E019C0E.root"
             }
         ],
         "vetted": true
@@ -298,7 +331,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_1.root",
                 "nevents": 11040,
                 "totEvents": 11040,
-                "weights": 11040.0
+                "weights": 11040.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/261B978A-4AC9-E611-801F-1CC1DE18CFEA.root"
             },
             {
                 "bad": false,
@@ -306,7 +340,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_2.root",
                 "nevents": 1380,
                 "totEvents": 1380,
-                "weights": 1380.0
+                "weights": 1380.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/4C1F511C-1FCA-E611-9937-00259022277E.root"
             },
             {
                 "bad": false,
@@ -314,7 +349,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_3.root",
                 "nevents": 7590,
                 "totEvents": 7590,
-                "weights": 7590.0
+                "weights": 7590.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/663AD0A8-65CA-E611-9AAC-3417EBE705CD.root"
             },
             {
                 "bad": false,
@@ -322,7 +358,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_4.root",
                 "nevents": 82010,
                 "totEvents": 82010,
-                "weights": 82010.0
+                "weights": 82010.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/6A723AA0-60C8-E611-8D4B-0CC47A706FFE.root"
             },
             {
                 "bad": false,
@@ -330,7 +367,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_5.root",
                 "nevents": 55200,
                 "totEvents": 55200,
-                "weights": 55200.0
+                "weights": 55200.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/7CAA21D6-2AC9-E611-9969-C45444922B77.root"
             },
             {
                 "bad": false,
@@ -338,7 +376,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_6.root",
                 "nevents": 37950,
                 "totEvents": 37950,
-                "weights": 37950.0
+                "weights": 37950.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/7E1DD4DD-3CC9-E611-8915-047D7BD6DF5E.root"
             },
             {
                 "bad": false,
@@ -346,7 +385,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175344/0000/myMicroAODOutputFile_7.root",
                 "nevents": 4830,
                 "totEvents": 4830,
-                "weights": 4830.0
+                "weights": 4830.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-35_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/9E3943DD-F5C9-E611-8810-002590DE6E78.root"
             }
         ],
         "vetted": true
@@ -359,7 +399,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175452/0000/myMicroAODOutputFile_1.root",
                 "nevents": 42424,
                 "totEvents": 42424,
-                "weights": 42424.0
+                "weights": 42424.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/9280E25E-FFC8-E611-8A6E-E0071B7A5540.root"
             },
             {
                 "bad": false,
@@ -367,7 +408,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175452/0000/myMicroAODOutputFile_2.root",
                 "nevents": 61907,
                 "totEvents": 61907,
-                "weights": 61907.0
+                "weights": 61907.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/C6554A9F-EEC8-E611-9772-A0000420FE80.root"
             },
             {
                 "bad": false,
@@ -375,7 +417,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175452/0000/myMicroAODOutputFile_3.root",
                 "nevents": 31768,
                 "totEvents": 31768,
-                "weights": 31768.0
+                "weights": 31768.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/6611A990-CFC8-E611-899E-24BE05C44B91.root"
             },
             {
                 "bad": false,
@@ -383,7 +426,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175452/0000/myMicroAODOutputFile_4.root",
                 "nevents": 63901,
                 "totEvents": 63901,
-                "weights": 63901.0
+                "weights": 63901.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-40_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/9CA55448-C5C8-E611-B908-5065F381A2E1.root"
             }
         ],
         "vetted": true
@@ -396,7 +440,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_1.root",
                 "nevents": 3156,
                 "totEvents": 3156,
-                "weights": 3156.0
+                "weights": 3156.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/00A587D7-48CA-E611-81F3-008CFA000B68.root"
             },
             {
                 "bad": false,
@@ -404,7 +449,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_10.root",
                 "nevents": 7068,
                 "totEvents": 7068,
-                "weights": 7068.0
+                "weights": 7068.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/5CD845DE-49CA-E611-B6F0-001E67504AA5.root"
             },
             {
                 "bad": false,
@@ -412,7 +458,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_11.root",
                 "nevents": 22593,
                 "totEvents": 22593,
-                "weights": 22593.0
+                "weights": 22593.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/6280B599-02CA-E611-943B-70106F4A92A0.root"
             },
             {
                 "bad": false,
@@ -420,7 +467,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_12.root",
                 "nevents": 53010,
                 "totEvents": 53010,
-                "weights": 53010.0
+                "weights": 53010.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/92716946-F9C9-E611-A8C3-001C23C0D109.root"
             },
             {
                 "bad": false,
@@ -428,7 +476,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_13.root",
                 "nevents": 2934,
                 "totEvents": 2934,
-                "weights": 2934.0
+                "weights": 2934.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/AABF4CD0-48CA-E611-A2F3-001E67E71B14.root"
             },
             {
                 "bad": false,
@@ -436,7 +485,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_14.root",
                 "nevents": 20015,
                 "totEvents": 20015,
-                "weights": 20015.0
+                "weights": 20015.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/C8414A21-46CA-E611-9E73-0025905B85FE.root"
             },
             {
                 "bad": false,
@@ -444,7 +494,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_15.root",
                 "nevents": 16314,
                 "totEvents": 16314,
-                "weights": 16314.0
+                "weights": 16314.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/C8BC9FD5-48CA-E611-A17F-00259073E496.root"
             },
             {
                 "bad": false,
@@ -452,7 +503,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_16.root",
                 "nevents": 3156,
                 "totEvents": 3156,
-                "weights": 3156.0
+                "weights": 3156.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/CE0959D8-48CA-E611-98EF-70106F49CE3C.root"
             },
             {
                 "bad": false,
@@ -460,7 +512,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_17.root",
                 "nevents": 3145,
                 "totEvents": 3145,
-                "weights": 3145.0
+                "weights": 3145.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/EE567314-49CA-E611-B5F5-FA163E9850C2.root"
             },
             {
                 "bad": false,
@@ -468,7 +521,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_18.root",
                 "nevents": 2356,
                 "totEvents": 2356,
-                "weights": 2356.0
+                "weights": 2356.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/F82443C7-48CA-E611-AFE3-FA163E417497.root"
             },
             {
                 "bad": false,
@@ -476,7 +530,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_19.root",
                 "nevents": 10591,
                 "totEvents": 10591,
-                "weights": 10591.0
+                "weights": 10591.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/FAAC32D0-48CA-E611-969D-6CC2173BBA30.root"
             },
             {
                 "bad": false,
@@ -484,7 +539,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_2.root",
                 "nevents": 19949,
                 "totEvents": 19949,
-                "weights": 19949.0
+                "weights": 19949.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/08631CB7-0ECA-E611-82F3-24BE05BDCEF1.root"
             },
             {
                 "bad": false,
@@ -492,7 +548,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_3.root",
                 "nevents": 2356,
                 "totEvents": 2356,
-                "weights": 2356.0
+                "weights": 2356.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/0C7C257E-49CA-E611-A23C-F4CE46B27A1A.root"
             },
             {
                 "bad": false,
@@ -500,7 +557,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_4.root",
                 "nevents": 3134,
                 "totEvents": 3134,
-                "weights": 3134.0
+                "weights": 3134.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/0C7E9DDB-49CA-E611-AF35-002590E7D5A6.root"
             },
             {
                 "bad": false,
@@ -508,7 +566,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_5.root",
                 "nevents": 2356,
                 "totEvents": 2356,
-                "weights": 2356.0
+                "weights": 2356.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/122B34C0-48CA-E611-A55C-B083FECFEF7D.root"
             },
             {
                 "bad": false,
@@ -516,7 +575,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_6.root",
                 "nevents": 3545,
                 "totEvents": 3545,
-                "weights": 3545.0
+                "weights": 3545.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/1496ED20-49CA-E611-AFE7-008CFA111334.root"
             },
             {
                 "bad": false,
@@ -524,7 +584,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_7.root",
                 "nevents": 4052,
                 "totEvents": 4052,
-                "weights": 4052.0
+                "weights": 4052.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/1AA7E967-49CA-E611-A7CA-001E67DDC119.root"
             },
             {
                 "bad": false,
@@ -532,7 +593,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_8.root",
                 "nevents": 16725,
                 "totEvents": 16725,
-                "weights": 16725.0
+                "weights": 16725.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/44689963-F9C9-E611-B43A-0CC47AA989C2.root"
             },
             {
                 "bad": false,
@@ -540,7 +602,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175559/0000/myMicroAODOutputFile_9.root",
                 "nevents": 1578,
                 "totEvents": 1578,
-                "weights": 1578.0
+                "weights": 1578.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-45_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/70000/46505FCD-48CA-E611-B12A-00259029ED22.root"
             }
         ],
         "vetted": true
@@ -553,7 +616,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-50_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175709/0000/myMicroAODOutputFile_1.root",
                 "nevents": 42860,
                 "totEvents": 42860,
-                "weights": 42860.0
+                "weights": 42860.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-50_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/3EABA3A6-37CA-E611-AE21-0CC47A4D760C.root"
             },
             {
                 "bad": false,
@@ -561,7 +625,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-50_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175709/0000/myMicroAODOutputFile_2.root",
                 "nevents": 102961,
                 "totEvents": 102961,
-                "weights": 102961.0
+                "weights": 102961.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-50_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/54F47192-2DCA-E611-BDC3-0025905B85A0.root"
             },
             {
                 "bad": false,
@@ -569,7 +634,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-50_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175709/0000/myMicroAODOutputFile_3.root",
                 "nevents": 54179,
                 "totEvents": 54179,
-                "weights": 54179.0
+                "weights": 54179.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-50_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/FA68E1B7-37CA-E611-BB1D-0CC47A7C3610.root"
             }
         ],
         "vetted": true
@@ -582,7 +648,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_1.root",
                 "nevents": 800,
                 "totEvents": 800,
-                "weights": 800.0
+                "weights": 800.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/1673F43B-23CC-E611-89F5-0CC47A1E0488.root"
             },
             {
                 "bad": false,
@@ -590,7 +657,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_10.root",
                 "nevents": 5382,
                 "totEvents": 5382,
-                "weights": 5382.0
+                "weights": 5382.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/5A3BFCF5-01CA-E611-BDDD-0CC47AA992C8.root"
             },
             {
                 "bad": false,
@@ -598,7 +666,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_11.root",
                 "nevents": 8801,
                 "totEvents": 8801,
-                "weights": 8801.0
+                "weights": 8801.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/5AD12E48-38C9-E611-BD31-0CC47A6C06C4.root"
             },
             {
                 "bad": false,
@@ -606,7 +675,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_12.root",
                 "nevents": 1491,
                 "totEvents": 1491,
-                "weights": 1491.0
+                "weights": 1491.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/98A59E02-4FCB-E611-8150-0242AC130003.root"
             },
             {
                 "bad": false,
@@ -614,7 +684,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_13.root",
                 "nevents": 691,
                 "totEvents": 691,
-                "weights": 691.0
+                "weights": 691.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/EA75DDC2-93C9-E611-A528-FA163E3C5807.root"
             },
             {
                 "bad": false,
@@ -622,7 +693,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_2.root",
                 "nevents": 4582,
                 "totEvents": 4582,
-                "weights": 4582.0
+                "weights": 4582.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/38DAD233-E9C9-E611-BFF7-24BE05C62711.root"
             },
             {
                 "bad": false,
@@ -630,7 +702,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_3.root",
                 "nevents": 2873,
                 "totEvents": 2873,
-                "weights": 2873.0
+                "weights": 2873.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/5C56F793-D8C9-E611-AA4A-0CC47A13D16E.root"
             },
             {
                 "bad": false,
@@ -638,7 +711,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_4.root",
                 "nevents": 2291,
                 "totEvents": 2291,
-                "weights": 2291.0
+                "weights": 2291.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/628D372F-FCC9-E611-983B-B083FED14CE0.root"
             },
             {
                 "bad": false,
@@ -646,7 +720,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_5.root",
                 "nevents": 74334,
                 "totEvents": 74334,
-                "weights": 74334.0
+                "weights": 74334.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/647BBBFD-4CC8-E611-B177-A0000420FE80.root"
             },
             {
                 "bad": false,
@@ -654,7 +729,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_6.root",
                 "nevents": 14365,
                 "totEvents": 14365,
-                "weights": 14365.0
+                "weights": 14365.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/A2404F6C-19C9-E611-9D7F-E0071B7A8570.root"
             },
             {
                 "bad": false,
@@ -662,7 +738,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_7.root",
                 "nevents": 2291,
                 "totEvents": 2291,
-                "weights": 2291.0
+                "weights": 2291.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/C2107605-E1C9-E611-ACCB-001E67DFF735.root"
             },
             {
                 "bad": false,
@@ -670,7 +747,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_8.root",
                 "nevents": 10748,
                 "totEvents": 10748,
-                "weights": 10748.0
+                "weights": 10748.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/CA78E1FA-1FC9-E611-BBB9-FA163E1A09F8.root"
             },
             {
                 "bad": false,
@@ -678,7 +756,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175817/0000/myMicroAODOutputFile_9.root",
                 "nevents": 70551,
                 "totEvents": 70551,
-                "weights": 70551.0
+                "weights": 70551.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-55_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/120000/D882F333-4FC8-E611-B7D4-A0000420FE80.root"
             }
         ],
         "vetted": true
@@ -691,7 +770,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175925/0000/myMicroAODOutputFile_1.root",
                 "nevents": 16742,
                 "totEvents": 16742,
-                "weights": 16742.0
+                "weights": 16742.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/CEC8B574-8ED1-E611-AAD9-02163E019BDF.root"
             },
             {
                 "bad": false,
@@ -699,7 +779,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175925/0000/myMicroAODOutputFile_2.root",
                 "nevents": 69869,
                 "totEvents": 69869,
-                "weights": 69869.0
+                "weights": 69869.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/546B32BD-9FC8-E611-A912-02163E019CEC.root"
             },
             {
                 "bad": false,
@@ -707,7 +788,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175925/0000/myMicroAODOutputFile_3.root",
                 "nevents": 41094,
                 "totEvents": 41094,
-                "weights": 41094.0
+                "weights": 41094.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/6EA5D97C-75C9-E611-9C17-02163E019B27.root"
             },
             {
                 "bad": false,
@@ -715,7 +797,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_175925/0000/myMicroAODOutputFile_4.root",
                 "nevents": 72295,
                 "totEvents": 72295,
-                "weights": 72295.0
+                "weights": 72295.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-5_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/80000/9CACFB37-AAC8-E611-A4E4-02163E019B92.root"
             }
         ],
         "vetted": true
@@ -728,7 +811,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_1.root",
                 "nevents": 2648,
                 "totEvents": 2648,
-                "weights": 2648.0
+                "weights": 2648.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/4EB38CC4-8DC8-E611-8B4E-F832E4CC4E51.root"
             },
             {
                 "bad": false,
@@ -736,7 +820,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_10.root",
                 "nevents": 52036,
                 "totEvents": 52036,
-                "weights": 52036.0
+                "weights": 52036.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/D4A81A2C-B9C7-E611-8644-02163E0174C6.root"
             },
             {
                 "bad": false,
@@ -744,7 +829,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_11.root",
                 "nevents": 18536,
                 "totEvents": 18536,
-                "weights": 18536.0
+                "weights": 18536.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/D8F840DD-BFC7-E611-ACC8-00266CF2CD48.root"
             },
             {
                 "bad": false,
@@ -752,7 +838,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_12.root",
                 "nevents": 7282,
                 "totEvents": 7282,
-                "weights": 7282.0
+                "weights": 7282.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/F0FE962A-D1C7-E611-B4C4-003048CDCF6E.root"
             },
             {
                 "bad": false,
@@ -760,7 +847,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_13.root",
                 "nevents": 1986,
                 "totEvents": 1986,
-                "weights": 1986.0
+                "weights": 1986.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/F28A073D-9CC8-E611-9302-0025905C975C.root"
             },
             {
                 "bad": false,
@@ -768,7 +856,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_2.root",
                 "nevents": 5496,
                 "totEvents": 5496,
-                "weights": 5496.0
+                "weights": 5496.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/56121268-20C9-E611-9FC8-00266CFB9534.root"
             },
             {
                 "bad": false,
@@ -776,7 +865,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_3.root",
                 "nevents": 6682,
                 "totEvents": 6682,
-                "weights": 6682.0
+                "weights": 6682.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/56D830B2-83C8-E611-A696-FA163EB2D67F.root"
             },
             {
                 "bad": false,
@@ -784,7 +874,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_4.root",
                 "nevents": 65614,
                 "totEvents": 65614,
-                "weights": 65614.0
+                "weights": 65614.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/6C3EB31D-0CC7-E611-BC45-02163E012E44.root"
             },
             {
                 "bad": false,
@@ -792,7 +883,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_5.root",
                 "nevents": 1986,
                 "totEvents": 1986,
-                "weights": 1986.0
+                "weights": 1986.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/6CFF7ADF-83C8-E611-8A14-008CFA0A5740.root"
             },
             {
                 "bad": false,
@@ -800,7 +892,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_6.root",
                 "nevents": 9930,
                 "totEvents": 9930,
-                "weights": 9930.0
+                "weights": 9930.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/9A344F39-25C8-E611-9A75-0CC47A706DC0.root"
             },
             {
                 "bad": false,
@@ -808,7 +901,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_7.root",
                 "nevents": 3310,
                 "totEvents": 3310,
-                "weights": 3310.0
+                "weights": 3310.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/A60237A4-1FC9-E611-9195-848F69FD29B2.root"
             },
             {
                 "bad": false,
@@ -816,7 +910,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_8.root",
                 "nevents": 20522,
                 "totEvents": 20522,
-                "weights": 20522.0
+                "weights": 20522.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/A8CBC588-3CC8-E611-8BE1-FA163E61F211.root"
             },
             {
                 "bad": false,
@@ -824,7 +919,8 @@
                 "name": "/store/group/phys_higgs/HiggsExo/H4Gamma/MicroAOD/H4G_Jun7/v0/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/Test_jun7-R2S16MAODv2-PUM17_GT/170607_180035/0000/myMicroAODOutputFile_9.root",
                 "nevents": 1986,
                 "totEvents": 1986,
-                "weights": 1986.0
+                "weights": 1986.0,
+                "parent":"/store/mc/RunIISummer16MiniAODv2/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8/MINIAODSIM/PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/50000/C85D3FF6-84C8-E611-B11D-D4AE526A0B29.root"
             }
         ],
         "vetted": true
