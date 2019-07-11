@@ -3,8 +3,6 @@ from flashgg.MetaData.samples_utils import SamplesManager
 import FWCore.ParameterSet.Config as cms
 import subprocess
 
-from flashgg.MetaData.secFiles import secFileList
-
 class JobConfig(object):
 
     def __init__(self,*args,**kwargs):
@@ -401,11 +399,6 @@ class JobConfig(object):
             else:
                 ## process.source.fileNames.extend([ str("%s%s" % (self.filePrepend,f)) for f in  files])
                 process.source.secondaryFileNames = plist
-
-
-
-
-        # process.source.secondaryFileNames = secFileList  # get list of secondary files by hand
 
         ## fwlite
         if isFwlite:
