@@ -78,7 +78,7 @@ namespace flashgg {
         {
             return ( pair1.second > pair2.second );
         };
-  }; 
+  };
 
   class H4GCandidateProducer : public EDProducer
   {
@@ -110,7 +110,7 @@ namespace flashgg {
     TMVA::Reader *VertexProbMva_;
 
     void produce( Event &, const EventSetup & ) override;
-    
+
     EDGetTokenT<View<Photon> > photonToken_;
     Handle<View<flashgg::Photon> > photons;
 
@@ -150,7 +150,7 @@ namespace flashgg {
     float MVA2;
     float dZ2;
     float dZtrue;
-   
+
     std::vector<std::pair<unsigned int, float> > sorter_;
     unsigned int selected_vertex_index_ = 0;
     unsigned int second_selected_vertex_index_ = 0;
@@ -285,7 +285,7 @@ namespace flashgg {
 
     int randVtxIndexI = -999;
     if( irand != -999 ) { randVtxIndexI = pvVecNoTrue[irand]; }
-    
+
     edm::Ptr<reco::Vertex> vertex_diphoton;
     edm::Ptr<reco::Vertex> vertex_bdt;
     //---at least one diphoton should pass the low mass hgg pre-selection
@@ -301,7 +301,7 @@ namespace flashgg {
     }
     int n_photons = -999;
     n_photons = photons->size();
-    
+
     std::vector<flashgg::Photon> phoVector;
     std::vector<edm::Ptr<flashgg::Photon>> phoPtrVector;
 
@@ -312,7 +312,7 @@ namespace flashgg {
         edm::Ptr<flashgg::DiPhotonCandidate> thisDPPtr = diphotons->ptrAt( dpIndex );
         diPhoPtrs.push_back(thisDPPtr);
       }
-      
+
       for( int phoIndex = 0; phoIndex < n_photons; phoIndex++ )
       {
         edm::Ptr<flashgg::Photon> pho = photons->ptrAt( phoIndex );
@@ -384,9 +384,9 @@ namespace flashgg {
            ptBal = testvar[2][vtx];
            pullConv = testvar[3][vtx];
            nConv = testvar[4][vtx];
-            
+
            float mva_value_ = VertexIdMva_->EvaluateMVA( "BDT" );
-           
+
            std::pair<unsigned int, float>pairToSort = std::make_pair( (unsigned int)vtx, mva_value_ );
            sorter_.push_back( pairToSort );
 
@@ -394,7 +394,7 @@ namespace flashgg {
                 max_mva_value_ = mva_value_;
                 selected_vertex_index_ = vtx;
            }
-      } 
+      }
 
       std::sort( sorter_.begin(), sorter_.end(), Sorter() );
 
@@ -402,7 +402,7 @@ namespace flashgg {
           second_max_mva_value_ = sorter_[1].second;
           second_selected_vertex_index_ = sorter_[1].first;
       }
-      
+
       if( sorter_.size() > 2 ) {
           third_max_mva_value_ = sorter_[2].second;
           third_selected_vertex_index_ = sorter_[2].first;
@@ -419,8 +419,6 @@ namespace flashgg {
       nVertices = (float) vertex->size();
       nConv = (float)testvar[4][selected_vertex_index_];
 
-      //cout << "MVAs: " << MVA0 << " - " << selected_vertex_index_ << " - " << MVA1 << " - " << second_selected_vertex_index_ << " - " << MVA2 << " - " << third_selected_vertex_index_ << endl; 
- 
       H4GCandidate h4g(phoVector, Vertices, slim_Vertices, vertex_diphoton, vertex_bdt, genVertex, BSPoint, diPhoPtrs, testvar, MVA0, MVA1, MVA2, dZ1, dZ2, dZtrue, hgg_index, trueVtxIndex, randVtxIndex, selected_vertex_index_, tp_pt, nVertices, nConv, VertexProbMva_);
       H4GColl_->push_back(h4g);
     }

@@ -43,7 +43,6 @@ H4GCandidate::H4GCandidate():
 phoVector_ (),
 Vertices_(),
 Vertex_random_(),
-// vertex_ (),
 
 vertex_diphoton_ (),
 BS_factor_0Vtx_ (),
@@ -94,7 +93,7 @@ tp_ ()
     float dataBeamSpotWidth_=3.5; //cm
 
     float dZ_HggVtx = genVertex_.z() - vertex_diphoton_->z();
-    float dZ_0Vtx = genVertex.z() - vtx_Z;
+    float dZ_0Vtx = genVertex.z() - Vertices_[0]->z();
     float dZ_RandomVtx = genVertex.z() - Vertex_random_->z();
     float dZ_BDTVtx = genVertex.z() - Vertices_[bdtVtx_index]->z();;
 
@@ -149,10 +148,10 @@ tp_ ()
       }
     }
 
-    pho1_MVA_ = -999.;
-    pho2_MVA_ = -999.;
-    pho3_MVA_ = -999.;
-    pho4_MVA_ = -999.;
+    pho1_MVA_ = phoP4Corrected_.size() > 0 ? phoP4Corrected_[0].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]) : -999;
+    pho2_MVA_ = phoP4Corrected_.size() > 0 ? phoP4Corrected_[1].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]) : -999;
+    pho3_MVA_ = phoP4Corrected_.size() > 2 ? phoP4Corrected_[2].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]) : -999;
+    pho4_MVA_ = phoP4Corrected_.size() > 3 ? phoP4Corrected_[3].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]) : -999;
 
     float minDM = 1000000;
     if (phoP4Corrected_.size() > 3)
@@ -202,18 +201,13 @@ tp_ ()
         }
       }
 
-      pho1_MVA_ = phoP4Corrected_[dp1_ipho1_].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-      pho2_MVA_ = phoP4Corrected_[dp1_ipho2_].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-      pho3_MVA_ = phoP4Corrected_[dp2_ipho1_].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-      pho4_MVA_ = phoP4Corrected_[dp2_ipho2_].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-
-      tp_ = phoP4Corrected_[dp1_ipho1_].p4() + phoP4Corrected_[dp1_ipho2_].p4() + phoP4Corrected_[dp2_ipho1_].p4() + phoP4Corrected_[dp2_ipho2_].p4();
-      pho12_ = phoP4Corrected_[dp1_ipho1_].p4() + phoP4Corrected_[dp1_ipho2_].p4();
-      pho13_ = phoP4Corrected_[dp1_ipho1_].p4() + phoP4Corrected_[dp2_ipho1_].p4();
-      pho14_ = phoP4Corrected_[dp1_ipho1_].p4() + phoP4Corrected_[dp2_ipho2_].p4();
-      pho23_ = phoP4Corrected_[dp1_ipho2_].p4() + phoP4Corrected_[dp2_ipho1_].p4();
-      pho24_ = phoP4Corrected_[dp1_ipho2_].p4() + phoP4Corrected_[dp2_ipho2_].p4();
-      pho34_ = phoP4Corrected_[dp2_ipho1_].p4() + phoP4Corrected_[dp2_ipho2_].p4();
+      tp_ = phoP4Corrected_[0].p4() + phoP4Corrected_[1].p4() + phoP4Corrected_[2].p4() + phoP4Corrected_[3].p4();
+      pho12_ = phoP4Corrected_[0].p4() + phoP4Corrected_[1].p4();
+      pho13_ = phoP4Corrected_[0].p4() + phoP4Corrected_[2].p4();
+      pho14_ = phoP4Corrected_[0].p4() + phoP4Corrected_[3].p4();
+      pho23_ = phoP4Corrected_[1].p4() + phoP4Corrected_[2].p4();
+      pho24_ = phoP4Corrected_[1].p4() + phoP4Corrected_[3].p4();
+      pho34_ = phoP4Corrected_[2].p4() + phoP4Corrected_[3].p4();
 
       phoP4Corrected1_ = phoP4Corrected_[dp1_ipho1_];
       phoP4Corrected2_ = phoP4Corrected_[dp1_ipho2_];
@@ -230,8 +224,7 @@ tp_ ()
 
       tp_ = phoP4Corrected_[0].p4() + phoP4Corrected_[1].p4();
       pho12_ = phoP4Corrected_[0].p4() + phoP4Corrected_[1].p4();
-      pho1_MVA_ = phoP4Corrected_[0].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-      pho2_MVA_ = phoP4Corrected_[1].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
+
 
       phoP4Corrected1_ = phoP4Corrected_[dp1_ipho1_];
       phoP4Corrected2_ = phoP4Corrected_[dp1_ipho2_];
@@ -247,9 +240,7 @@ tp_ ()
       pho12_ = phoP4Corrected_[0].p4() + phoP4Corrected_[1].p4();
       pho13_ = phoP4Corrected_[0].p4() + phoP4Corrected_[2].p4();
       pho23_ = phoP4Corrected_[1].p4() + phoP4Corrected_[2].p4();
-      pho1_MVA_ = phoP4Corrected_[0].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-      pho2_MVA_ = phoP4Corrected_[1].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
-      pho3_MVA_ = phoP4Corrected_[2].phoIdMvaDWrtVtx(Vertices_[bdtVtx_index]);
+
 
       phoP4Corrected1_ = phoP4Corrected_[dp1_ipho1_];
       phoP4Corrected2_ = phoP4Corrected_[dp1_ipho2_];
@@ -257,8 +248,8 @@ tp_ ()
     }
 
     tp_pt =  tp_.pt();
-    vtxProbMVA_ = VertexProbMva_->EvaluateMVA( "BDT" );  
-  
+    vtxProbMVA_ = VertexProbMva_->EvaluateMVA( "BDT" );
+
   }
 
   float H4GCandidate::getCosThetaStar_CS(float ebeam) const {
@@ -305,7 +296,7 @@ tp_ ()
   float H4GCandidate::HelicityCosTheta( TLorentzVector Booster, TLorentzVector Boosted) const
   {
     TVector3 BoostVector = Booster.BoostVector();
-   
+
     Boosted.Boost( -BoostVector.x(), -BoostVector.y(), -BoostVector.z() );
     return Boosted.CosTheta();
   }
