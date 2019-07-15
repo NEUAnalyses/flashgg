@@ -29,11 +29,11 @@ void VertexMva_H4G()
     TString outfileName( "outputTMVA_BDTVtxId.root" );
     TFile* outputFile = TFile::Open( outfileName, "RECREATE" );
 
-    TFile* inputFile = TFile::Open("/eos/cms/store/user/bmarzocc/H4G_Analysis/Dumpers_vtxID/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8_dump.root");
+    TFile* inputFile = TFile::Open("/eos/cms/store/user/bmarzocc/H4G_Analysis/Dumpers_vtxID/SUSYGluGluToHToAA_AToGG_Total_TuneCUETP8M1_13TeV_pythia8.root");
 
-    TTree* signal_ggf  = (TTree*)inputFile->Get("h4gCandidateDumper_sig/trees/SUSYGluGluToHToAA_AToGG_M_60_TuneCUETP8M1_13TeV_pythia8_13TeV_4photons_sig");
-    TTree* bkg_ggf     = (TTree*)inputFile->Get("h4gCandidateDumper_bkg/trees/SUSYGluGluToHToAA_AToGG_M_60_TuneCUETP8M1_13TeV_pythia8_13TeV_4photons_bkg");
-     
+    TTree* signal_ggf  = (TTree*)inputFile->Get("h4gCandidateDumper_vtxBDT_sig/trees/SUSYGluGluToHToAA_AToGG_TuneCUETP8M1_13TeV_pythia8_13TeV_4photons_sig");
+    TTree* bkg_ggf     = (TTree*)inputFile->Get("h4gCandidateDumper_vtxBDT_bkg/trees/SUSYGluGluToHToAA_AToGG_TuneCUETP8M1_13TeV_pythia8_13TeV_4photons_bkg");
+    
     TMVA::Tools::Instance();
 
     TMVA::Factory *factory = new TMVA::Factory( "TMVAClassification", outputFile,
@@ -54,8 +54,8 @@ void VertexMva_H4G()
 
     outputFile->cd();
 
-    TCut mycuts = "ptBal < 500 && logSumpt2 >= -10 && logSumpt2<9999.";
-    TCut mycutb = "ptBal < 500 && logSumpt2 >= -10 && logSumpt2<9999."; 
+    TCut mycuts = "fabs(ptAsym) < 999. && fabs(ptBal) < 999. && fabs(logSumpt2)<999. && fabs(pullConv)<999. && fabs(nConv)<999. && !std::isnan(ptAsym) && !std::isnan(ptBal) && !std::isnan(logSumpt2) && !std::isnan(pullConv) && !std::isnan(nConv)";
+    TCut mycutb = "fabs(ptAsym) < 999. && fabs(ptBal) < 999. && fabs(logSumpt2)<999. && fabs(pullConv)<999. && fabs(nConv)<999. && !std::isnan(ptAsym) && !std::isnan(ptBal) && !std::isnan(logSumpt2) && !std::isnan(pullConv) && !std::isnan(nConv)";
 
     factory->PrepareTrainingAndTestTree( mycuts, mycutb,
                                     "nTrain_Signal=0:nTrain_Background=0:SplitMode=Random:NormMode=NumEvents:!V" );
@@ -74,8 +74,8 @@ void VertexMva_H4G()
     TMVA::MethodBase* BDT_Cat = factory->BookMethod( TMVA::Types::kCategory, "BDTVtxId","" );
     mcat = dynamic_cast<TMVA::MethodCategory*>(BDT_Cat);
 
-    mcat->AddMethod( "nConv<1", theCat1Vars, TMVA::Types::kBDT, "BDTVtxId_noconv","!H:!V:!CreateMVAPdfs:NTrees=1000:BoostType=Grad:Shrinkage=0.05:UseBaggedBoost:GradBaggingFraction=0.6:SeparationType=GiniIndex:nCuts=20:MaxDepth=3:MinNodeSize=2:NegWeightTreatment=ignorenegweightsintraining");
-    mcat->AddMethod( "nConv>=1",  theCat2Vars, TMVA::Types::kBDT, "BDTVtxId_conv","!H:!V:!CreateMVAPdfs:NTrees=1000:BoostType=Grad:Shrinkage=0.05:UseBaggedBoost:GradBaggingFraction=0.6:SeparationType=GiniIndex:nCuts=20:MaxDepth=3:MinNodeSize=2:NegWeightTreatment=ignorenegweightsintraining");
+    mcat->AddMethod( "nConv<1 && nConv>-999.", theCat1Vars, TMVA::Types::kBDT, "BDTVtxId_noconv","!H:!V:!CreateMVAPdfs:NTrees=1000:BoostType=Grad:Shrinkage=0.05:UseBaggedBoost:GradBaggingFraction=0.6:SeparationType=GiniIndex:nCuts=20:MaxDepth=3:MinNodeSize=2:NegWeightTreatment=ignorenegweightsintraining");
+    mcat->AddMethod( "nConv>=1 && nConv<999.",  theCat2Vars, TMVA::Types::kBDT, "BDTVtxId_conv","!H:!V:!CreateMVAPdfs:NTrees=1000:BoostType=Grad:Shrinkage=0.05:UseBaggedBoost:GradBaggingFraction=0.6:SeparationType=GiniIndex:nCuts=20:MaxDepth=3:MinNodeSize=2:NegWeightTreatment=ignorenegweightsintraining");
 
     factory->TrainAllMethods();
 

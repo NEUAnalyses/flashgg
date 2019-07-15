@@ -16,10 +16,10 @@ FlashggH4GCandidate = cms.EDProducer("FlashggH4GCandidateProducer",
                                      VertexCandidateMapTag  = cms.InputTag("flashggVertexMapUnique"),
 
                                      ##Parameters for Legacy Vertex Selector
-                                     vertexIdMVAweightfile      = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxId_H4G_M-60_2016.xml"),
-                                     vertexProbMVAweightfile    = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxProb_H4G_M-60_2016.xml"),
-                                     vertexIdMVAweightfileH4G   = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxId_H4G_M-60_2016.xml"),
-                                     vertexProbMVAweightfileH4G = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxProb_H4G_M-60_2016.xml"),
+                                     vertexIdMVAweightfile      = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxId_SL_2016.xml"),
+                                     vertexProbMVAweightfile    = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxProb_SL_2016.xml"),
+                                     vertexIdMVAweightfileH4G   = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxId_H4G_Total_2016.xml"),
+                                     vertexProbMVAweightfileH4G = cms.FileInPath("flashgg/MicroAOD/data/TMVAClassification_BDTVtxProb_H4G_Total_2016.xml"),
                                      useSingleLeg               = cms.bool(True),
                                      useZerothVertexFromMicro   = cms.bool(False),
 

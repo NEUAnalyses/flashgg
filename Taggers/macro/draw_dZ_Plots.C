@@ -30,8 +30,9 @@ void draw_dZ_Plots() {
   
   gStyle->SetOptStat(0);
 
-  TFile* inFile = TFile::Open("/eos/cms/store/user/bmarzocc/H4G_Analysis/Dumpers_vtxProb/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8_dump.root");
-  TTree* tree = (TTree*)inFile->Get("h4gCandidateDumper/trees/SUSYGluGluToHToAA_AToGG_M_60_TuneCUETP8M1_13TeV_pythia8_13TeV_4photons_sig");
+  //TFile* inFile = TFile::Open("/eos/cms/store/user/bmarzocc/H4G_Analysis/Dumpers_vtxProb/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8_dump.root");
+  TFile* inFile = TFile::Open("../../outDir/SUSYGluGluToHToAA_AToGG_M-60_TuneCUETP8M1_13TeV_pythia8.root");
+  TTree* tree = (TTree*)inFile->Get("h4gCandidateDumper_vtxProb/trees/SUSYGluGluToHToAA_AToGG_M_60_TuneCUETP8M1_13TeV_pythia8_13TeV_4photons");
 
   TH1F* h_dZ_zeroVtx = new TH1F("h_dZ_zeroVtx","",100,0.,20.);
   tree->Draw("fabs(dZ_zeroVtx) >> h_dZ_zeroVtx","BS_factor_0Vtx");
