@@ -381,7 +381,11 @@
 <class name="std::vector<flashgg::DoubleHTag>"/>
 <class name="edm::Wrapper<std::vector<flashgg::DoubleHTag> >"/>
 
-<class name="flashgg::H4GCandidate" ClassVersion="40">
+<class name="flashgg::H4GCandidate" ClassVersion="44">
+ <version ClassVersion="44" checksum="170579232"/>
+ <version ClassVersion="43" checksum="2887744875"/>
+ <version ClassVersion="42" checksum="4196731377"/>
+ <version ClassVersion="41" checksum="3246670600"/>
  <version ClassVersion="40" checksum="2957967033"/>
  <version ClassVersion="39" checksum="988400642"/>
 </class>

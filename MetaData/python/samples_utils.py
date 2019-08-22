@@ -174,24 +174,6 @@ class SamplesManager(object):
                     break
         return files
 
-    # def getsecondaryFilesFomDAS(self,dsetName):
-    #     """
-    #     Read secondary files (parent dataset files) from DAS.
-    #     @dsetName: dataset name
-    #     """
-    #     ## response = das_query("https://cmsweb.cern.ch","file dataset=%s | grep file.name,file.nevents" % dsetName, 0, 0, False, self.dbs_instance_, ckey=x509(), cert=x509())
-    #     ## response = das_query("https://cmsweb.cern.ch","file dataset=%s instance=%s | grep file.name,file.nevents" % (dsetName,self.dbs_instance_), 0, 0, False, ckey=x509(), cert=x509())
-    #     # response = das_query("file dataset=%s instance=%s | grep file.name,file.nevents" % (dsetName,self.dbs_instance_))
-    #     response = das_query("parent file=%s instance=%s" %())
-    #
-    #     secondaryfiles=[]
-    #     for d in response["data"]:
-    #         for jf in d["file"]:
-    #             if "nevents" in jf:
-    #                 files.append({ "name" : jf["name"], "nevents" : jf["nevents"] })
-    #                 break
-    #     return secondaryfiles
-
     def importFromEOS(self,folders):
         """
         Import datasets from DAS to the catalog.
@@ -878,11 +860,7 @@ class SamplesManager(object):
                     if fil.get("bad",False):
                         continue
                     nev, name = fil["nevents"], fil["name"]
-                    # print "number of events", nev
-                    # print "name ", name
                     parentName = fil["parent"]
-                    # print "parent name", fil["parent"]
-
                     totEvents += nev
                     if weightName :
                         totWeights += fil.get(weightName,0.)
@@ -906,7 +884,9 @@ class SamplesManager(object):
 
         if jobId != -1:
             files = [ allFiles[i] for i in range(jobId,len(allFiles),nJobs) ]
+            print "Here 1"
             parentFiles = [ allparentFiles[i] for i in range(jobId,len(allparentFiles),nJobs) ]
+
         else:
             files = allFiles
             parentFiles = allparentFiles
