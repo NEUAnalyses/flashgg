@@ -72,6 +72,15 @@
 </class>
 <class name="std::vector<flashgg::TTHLeptonicTag>"/>
 <class name="edm::Wrapper<std::vector<flashgg::TTHLeptonicTag> >"/>
+
+<class name="flashgg::THQLeptonicTag"/>
+<class name="std::vector<flashgg::THQLeptonicTag>"/>
+<class name="edm::Wrapper<std::vector<flashgg::THQLeptonicTag> >"/>
+
+<class name="flashgg::THQLeptonicTagTruth"/>
+<class name="std::vector<flashgg::THQLeptonicTagTruth>"/>
+<class name="edm::Wrapper<std::vector<flashgg::THQLeptonicTagTruth> >"/>
+
 <class name="std::vector<pat::Muon>"/>
 <class name="flashgg::TTHDiLeptonTag" ClassVersion="14">
  <version ClassVersion="14" checksum="4003252239"/>
@@ -170,8 +179,8 @@
 <class name="edm::Wrapper<std::vector<flashgg::VHHadronicTag> >"/>
 <class name="edm::Ptr<flashgg::DiPhotonTagBase>"/>
 <class name="edm::Wrapper<edm::Ptr<flashgg::DiPhotonTagBase> >"/>
-<class name="edm::Ptr<reco::Vertex>"/> 
-<class name="std::vector<edm::Ptr<reco::Vertex> >"/> 
+<class name="edm::Ptr<reco::Vertex>"/>
+<class name="std::vector<edm::Ptr<reco::Vertex> >"/>
 <class name="flashgg::Photon" ClassVersion="13">
  <version ClassVersion="13" checksum="1109558243"/>
  <version ClassVersion="12" checksum="1503356172"/>
@@ -261,9 +270,10 @@
 <class name="std::vector<flashgg::Jet>"/>
 <class name="edm::Ptr<flashgg::Jet>"/>
 
-<class name="flashgg::Met" ClassVersion="11">
+<class name="flashgg::Met" ClassVersion="12">
   <version ClassVersion="10" checksum="2272826605"/>
   <version ClassVersion="11" checksum="1231550995"/>
+  <version ClassVersion="12" checksum="597961085"/>
 </class>
 <class name="std::vector<flashgg::Met>"/>
 <class name="edm::Wrapper<std::vector<flashgg::Met> >"/>
@@ -392,5 +402,24 @@
 </class>
 <class name="std::vector<flashgg::H4GCandidate>"/>
 <class name="edm::Wrapper<std::vector<flashgg::H4GCandidate> >"/>
+
+<class name="flashgg::TagAndProbeCandidate"/>
+<class name="std::vector<flashgg::TagAndProbeCandidate>"/>
+<class name="edm::Wrapper<std::vector<flashgg::TagAndProbeCandidate> >"/>
+<class name="edm::Ptr<flashgg::TagAndProbeCandidate>"/>
+<class name="edm::Wrapper<edm::Ptr<flashgg::TagAndProbeCandidate> >"/>
+<class name="std::vector<edm::Ptr<flashgg::TagAndProbeCandidate> >"/>
+<class name="edm::Wrapper<std::vector<edm::Ptr<flashgg::TagAndProbeCandidate> > >"/>
+<class name="edm::reftobase::BaseHolder<flashgg::TagAndProbeCandidate>"/>
+<class name="edm::RefToBase<flashgg::TagAndProbeCandidate>"/>
+<class name="edm::reftobase::IndirectHolder<flashgg::TagAndProbeCandidate>" />
+<class name="edm::RefToBaseProd<flashgg::TagAndProbeCandidate>" />
+<class name="edm::RefToBaseVector<flashgg::TagAndProbeCandidate>" />
+<class name="edm::Wrapper<edm::RefToBaseVector<flashgg::TagAndProbeCandidate> >" />
+<class name="edm::reftobase::BaseVectorHolder<flashgg::TagAndProbeCandidate>" />
+<class name="edm::Ref<std::vector<flashgg::TagAndProbeCandidate>,flashgg::TagAndProbeCandidate,edm::refhelper::FindUsingAdvance<std::vector<flashgg::TagAndProbeCandidate>,flashgg::TagAndProbeCandidate> >"/>
+<class name="edm::RefProd<std::vector<flashgg::TagAndProbeCandidate> >"/>
+<class name="edm::RefVector<std::vector<flashgg::TagAndProbeCandidate>,flashgg::TagAndProbeCandidate,edm::refhelper::FindUsingAdvance<std::vector<flashgg::TagAndProbeCandidate>,flashgg::TagAndProbeCandidate> >"/>
+<class name="edm::Wrapper<edm::RefVector<std::vector<flashgg::TagAndProbeCandidate>,flashgg::TagAndProbeCandidate,edm::refhelper::FindUsingAdvance<std::vector<flashgg::TagAndProbeCandidate>,flashgg::TagAndProbeCandidate> > >"/>
 
 </lcgdict>

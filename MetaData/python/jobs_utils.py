@@ -111,6 +111,9 @@ class JobsManager(object):
                 make_option("-R","--resubmit-missing",dest="resubMissing",default=False, action="store_true",
                             help="resubmit unfinished jobs upon continue."
                             ),
+                make_option("--resubmit-ids",dest="resubmit_ids", default="", type="string",
+                            help="Specify list of job ids to be resubmitted"
+                            ),
                 make_option("-b","--batch-system",dest="batchSystem",type="string",
                             default="auto",help="Batch system name. Currently supported: sge lsf, default: %default"
                             ),
@@ -198,6 +201,11 @@ class JobsManager(object):
                 if nsub <= self.options.maxResub:
                     resub = True
                     if self.options.resubMissing:
+                        if self.options.batchSystem == 'htcondor' and self.options.resubmit_ids != "":
+                            for i,arg in enumerate(args):
+                                if 'resubMap' in arg:
+                                    args[i] = 'resubMap='+self.options.resubmit_ids
+                            print('Forced resubmission: jobs %s will be resubmitted' % self.options.resubmit_ids)
                         out = self.parallel.run(cmd,args,jobName=jobName)
                         if self.options.queue and self.options.asyncLsf:
                             job[5] = out[-1][1][1]
@@ -260,7 +268,7 @@ class JobsManager(object):
         if options.useTarball:
             apset = os.path.abspath(pset)
             self.jobFactory.mkTarball("%s/sandbox.tgz" % os.path.abspath(options.outputDir),
-                                      tarball_entries=[apset,"python","lib","bin","src/flashgg/MetaData/python"],tarball_patterns={"src/*":"data", "external/*":"data"},
+                                      tarball_entries=[apset,"python","lib","bin","src/flashgg/MetaData/python"],tarball_patterns=[("src/*","data"), ("external/*","data"), ("src/*","toolbox")],
                                       tarball_transform="'s,%s,pset.py,'" % (apset.lstrip("/"))
                                       )
             if not options.queue:
@@ -368,9 +376,10 @@ class JobsManager(object):
                     hadd = self.getHadd(out,outfile)
                     print " now submitting jobs",
                     #---HTCondor cluster submission
-                    if self.options.batchSystem == 'htcondor':
+                    if self.options.batchSystem == 'htcondor' and self.options.queue:
                         iargs = jobargs+shell_args("nJobs=%d jobId=${jobIdsMap[${1}]} resubMap=%s" % (maxJobs, ','.join([str(x) for x in range(maxJobs)])))
                         dnjobs = maxJobs
+                        batchId = -1
                         if not options.dry_run:
                             ret,out = parallel.run(job,iargs)[-1]
                             if self.options.queue and self.options.asyncLsf:
@@ -531,7 +540,7 @@ class JobsManager(object):
                     print ""
                     print "Job failed. Number of resubmissions: %d / %d. " % (ijob[3], self.maxResub),
                     if ijob[3] < self.maxResub:
-                        if self.options.batchSystem == 'htcondor':
+                        if self.options.batchSystem == 'htcondor' and self.options.queue:
                             print "Collecting failed job for future resubmission."
                             ijob[3] += 1
                             if ijob[3] == self.maxResub and "lastAttempt=1" not in iargs:
@@ -558,7 +567,7 @@ class JobsManager(object):
                         print "Giving up."
                 #---HTCondor remove jobid from the jobid list sotred in the task_config json
                 #   (do not rely on return value stored in ijob[4] for HTC)
-                elif self.options.batchSystem == 'htcondor' and ret[2] in ijob[5][1]:
+                elif self.options.batchSystem == 'htcondor' and self.options.queue and ret[2] in ijob[5][1]:
                     ijob[5][1].remove(ret[2])
 
         self.storeTaskConfig(self.task_config)
