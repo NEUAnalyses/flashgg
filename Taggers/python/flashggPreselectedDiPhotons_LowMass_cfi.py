@@ -85,7 +85,7 @@ flashggPreselectedDiPhotonsLowMass = cms.EDFilter(
                      " && mass > 55" ##### Change mass cut if needed
                      " && (leadingPhoton.pt > 0.47*mass && subLeadingPhoton.pt > 0.28*mass)"  #Scaled pTs
                      " && (!leadingPhoton.hasPixelSeed) && (!subLeadingPhoton.hasPixelSeed)"  #E-veto
-                     " && (leadPhotonId > -0.9 && subLeadPhotonId > -0.9)"  #Photon ID MVA
+                     #" && (leadPhotonId > -0.9 && subLeadPhotonId > -0.9)"  #Photon ID MVA
        # " && (leadingPhoton.passElectronVeto) && (subLeadingPhoton.passElectronVeto)"
         ),
     variables = rediscoveryHLTvariables,
